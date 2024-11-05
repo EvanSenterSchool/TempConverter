@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        double celsius = 0;
+        double celsius;
         double fahrenheit;
         boolean valid = false;
         String user;
@@ -16,7 +16,7 @@ public class Main {
 
                 Scanner scan = new Scanner(System.in);
                 do {
-                    System.out.printf("%-13s", "Please enter your temperature in celsius to be converted to fahrenheit");
+                    System.out.printf("%-13s", "Please enter your temperature in celsius to be converted to fahrenheit or N to stop");
                     System.out.println();
                     if (scan.hasNextDouble()) {
                         celsius = scan.nextDouble();
